@@ -1,0 +1,20 @@
+body {
+  background-color: #F4FA92;
+  font-weight: 300;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  color:green;
+}
+
+svg .special {
+  fill: lightblue;
+}
+
+g:hover {
+  transform: scale(1.5);
+}

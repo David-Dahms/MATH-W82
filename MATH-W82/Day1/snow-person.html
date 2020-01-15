@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Snowy Person</title>
+
+    <style>
+      body {
+    background-color: red;
+    position: relative;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    /* Standard syntax */
+    animation-name: example;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:yellow;}
+    50%  {background-color:blue;}
+    75%  {background-color:green;}
+    100% {background-color:red;}
+  }
+
+  /* Standard syntax */
+  @keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:yellow;}
+    50%  {background-color:blue;}
+    75%  {background-color:green;}
+    100% {background-color:red;}
+  }
+    </style>
+
+    <style>
+    /* Popup container - can be anything you want */
+    .popup {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* The actual popup */
+    .popup .popuptext {
+      visibility: hidden;
+      width: 160px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -80px;
+    }
+
+    /* Popup arrow */
+    .popup .popuptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+    }
+
+    /* Toggle this class - hide and show the popup */
+    .popup .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+    }
+
+    /* Add animation (fade in the popup) */
+    @-webkit-keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity:1 ;}
+    }
+    </style>
+    <div class="popup" onclick="myFunction()">Click me to toggle the popup!
+  <span class="popuptext" id="myPopup">Only the best snowmen can visit this page!</span>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
+  </head>
+  <body>
+
+<img src="http://www.theinvestmentmania.com/wp-content/uploads/2016/12/Grammarly-Advertisement.png" alt="">
+
+   <h1> My snowy Person </h1>
+    <h2> Best features of my snow person:  </h2>
+      <p> His majestic carrot nose </p>
+    <h2> Worst features of my snow person </h2>
+
+    <p align="center">Our snow person is made from snow and is pretty cool.</p>
+    <p align="right">One of his hobbies is chilling with his friends.</p>
+
+    <h2>Friends</h2>
+
+    <ul>
+        <li>Bob</li>
+        <li>Sally</li>
+        <li>Joe</li>
+    </ul>
+
+<h1><u>One trick that doctors hate that make your nose look younger!</u></h1>
+  <h2>
+    <ol>
+      <li>buy baby carrots</li>
+      <li>go to tanning salon</li>
+      <li>insert carrot on face</li>
+      <li>profit</li>
+    </ol>
+  </h2>
+
+    <h2>Favorite Poem</h2>
+
+    <pre>Roses are red, violets are blue, and I can't rhyme.</pre>
+    <h2> Enter your name to win a snowball: </h2>
+      <input type="text" name="" value="">
+
+<div></div>
+
+    <h2>Fire Info:</h2>
+        <a href="https://fires.globalforestwatch.org/home/">Fire Watch</a>
+    <h2>The most beautiful pictures:</h2>
+      <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Ferikkain%2Ffiles%2F2019%2F01%2Fsneaky-snowman.jpg" alt="">
+      <img src="https://media2.giphy.com/media/lE6MQFHe6NREA/source.gif" alt="">
+  </body>
+</html>
