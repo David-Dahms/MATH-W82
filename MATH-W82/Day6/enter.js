@@ -15,13 +15,15 @@ let countries = [
 // builds the rectangles
 d3.selectAll('svg#big-countries')
   .selectAll('rect')
-  .data(countries)
+  .data(countries.sort((a, b) => a.Rural - b.Rural))
   .enter()
   .append('rect')
-  .attr('x', 130)
+  .transition()
+  .duration(2000)
+  .attr('x', 140)
   .attr('y', (d, i) => i * 20)
   .attr('height', 15)
-  .attr('width', d => (d.Population / 1500) * 400)
+  .attr('width', d => (d.Rural / 100) * 400)
   .style('fill', 'red')
 
 // builds the text
@@ -31,6 +33,7 @@ d3.selectAll('svg#big-countries')
   .enter()
   .append('text')
   .attr('x', 0)
-  .attr('y', (d, i) => i * 20)
+  .attr('y', (d, i) => i * 20 + 11.5)
   .attr('height', 15)
   .text(d => (d.Country))
+  
